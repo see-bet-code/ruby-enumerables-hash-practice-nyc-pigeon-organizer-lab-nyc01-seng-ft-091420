@@ -10,7 +10,9 @@ def nyc_pigeon_organizer(data)
       temp = []
       names.each { |name|
         new_hash[name] = {
+          binding.pry
           key => temp << attributes
+          binding.pry
         }
       }
     }
