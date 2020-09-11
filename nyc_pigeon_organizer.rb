@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         binding.pry
         new_hash[name] = {
           binding.pry
-          key => temp << attributes
+          key => attributes
           binding.pry
         }
       }
