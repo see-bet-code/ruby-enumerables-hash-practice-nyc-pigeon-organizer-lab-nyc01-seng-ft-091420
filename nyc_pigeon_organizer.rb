@@ -9,11 +9,11 @@ def nyc_pigeon_organizer(data)
     hash.each { |attributes, names|
       temp = []
       names.each { |name|
-        new_hash[name] = {
-          if !temp.include?(attributes)
+        if !temp.include?(attributes)
+          new_hash[name] = {
             key => temp << attributes
-          end
-        }
+          }
+        end
       }
     }
   }
