@@ -12,6 +12,7 @@ def nyc_pigeon_organizer(data)
         new_hash[name] = {
           if !temp.include?(attributes)
             key => temp << attributes
+          end
         }
       }
     }
