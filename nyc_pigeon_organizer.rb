@@ -8,7 +8,9 @@ def nyc_pigeon_organizer(data)
   data.each { |key, hash|
     hash.each { |attributes, names|
       names.each { |name|
-        new_hash[name][key] = temp
+        new_hash[name] => {
+          key => attributes
+        }
       }
     }
   }
