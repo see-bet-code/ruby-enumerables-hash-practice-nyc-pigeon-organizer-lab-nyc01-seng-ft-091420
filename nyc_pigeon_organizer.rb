@@ -7,13 +7,13 @@ def nyc_pigeon_organizer(data)
   temp = []
   data.each { |key, hash|
     binding.pry
-    hash.each { |attributes, names|
+    hash.each { |attribute, names|
       binding.pry
       temp = []
       names.each { |name|
         binding.pry
         new_hash[name] = {
-          key => [attributes]
+          key => [attribute]
         }
       }
     }
