@@ -6,15 +6,12 @@ def nyc_pigeon_organizer(data)
   new_hash = {}
   temp = []
   data.each { |key, hash|
-    binding.pry
     hash.each { |attribute, names|
-      binding.pry
       temp = []
       names.each { |name|
-        binding.pry
-        new_hash[name] = {
-          key => [attribute]
-        }
+        new_hash[name] = {} if !new_hash.has_key(name)
+        new_hash[name][key] = [] if !new_hash[name].has_key(key)
+        new_hash[name][key] << attribute if !new_hash[name][key].include?(attribute)
       }
     }
   }
