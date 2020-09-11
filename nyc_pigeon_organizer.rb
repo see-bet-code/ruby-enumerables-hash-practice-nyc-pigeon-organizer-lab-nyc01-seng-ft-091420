@@ -8,10 +8,7 @@ def nyc_pigeon_organizer(data)
     binding.pry
     hash.each { |attributes, names|
       binding.pry
-      new_hash[names] => {
-        binding.pry
-        attributes => 1
-      }
+      new_hash[names]
 
     }
   }
